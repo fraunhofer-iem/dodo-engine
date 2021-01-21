@@ -18,25 +18,25 @@ export interface MaturityLevel {
   // an array with one element without category signalizes no
   // needed category but just a overall needed threshold to reach
   // this maturity level
-  requirements: [Requirement];
+  requirements: Array<Requirement>;
   description?: string;
 }
 
 export interface Action {
   name: string;
   description?: string;
-  effects: [{ metric: Metric; scalingFactor?: number }];
+  effects: Array<{ metric: Metric; scalingFactor?: number }>;
 }
 
 export interface Goal {
   name: string;
   description?: string;
-  effects: [{ metric: Metric; scalingFactor?: number }];
+  effects: Array<{ metric: Metric; scalingFactor?: number }>;
 }
 
 export interface DataModel {
-  metrics: [Metric];
-  maturityLevel: [MaturityLevel];
-  actions: [Action];
-  goals: [Goal];
+  metrics: Array<Metric>;
+  maturityLevel: Array<MaturityLevel>;
+  actions: Array<Action>;
+  goals: Array<Goal>;
 }
