@@ -1,0 +1,1 @@
+For local tests install this repository to your local npm repository as described here [1](https://stackoverflow.com/questions/8088795/installing-a-local-module-using-npm).
