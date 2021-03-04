@@ -10,7 +10,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Currently, no tests will be executed here.\" && exit 0",
-    "build": "rm -rf dist && tsc -p ."
+    "build": "rm -rf dist && tsc -p .",
+    "prepare": "npm run build"
   },
   "author": "Jan-Niclas Struewer",
   "devDependencies": {
